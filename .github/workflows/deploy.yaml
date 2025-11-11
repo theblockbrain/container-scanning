@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-workflow-passing-data:
+    uses: theblockbrain/workflows/.github/workflows/gitflow.yml@5c1de98e1ce1549808ff3a479a14e8bcf8126ec9
+    with:
+      container-name: tst
+      environment: develop
+      branch: main
+    secrets:
+      iam-role: arn:aws:iam::853310098537:role/github-ecr
