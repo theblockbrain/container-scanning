@@ -5,11 +5,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  tst:
+  image:
     uses: theblockbrain/workflows/.github/workflows/gitflow.yml@feat/PDEV-1745
     with:
       container-name: sentimentanalysis
       environment: tst
       branch: main
+      trivy_conf: ./trivy/trivy-conf.yaml
     secrets:
       iam-role: arn:aws:iam::853310098537:role/github-ecr
