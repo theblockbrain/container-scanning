@@ -1,0 +1,31 @@
+# https://trivy.dev/docs/latest/references/configuration/config-file/
+
+timeout: 10m
+format: cyclonedx
+output: 'sbom.json'
+dependency-tree: true
+# list-all-pkgs: true
+exit-code: 0
+ignorefile: "trivy/.trivyignore"
+severity:
+  - HIGH
+  - CRITICAL
+scan:
+  skip-dirs:
+    - /lib64
+    - /lib
+    - /usr/lib
+    - /usr/include
+    # - /usr/bin
+    # - /usr/local
+
+  scanners:
+    - vuln
+    - secret
+pkg:
+  types:
+   - os
+   - library
+
+vulnerability:
+  ignore-unfixed: true
