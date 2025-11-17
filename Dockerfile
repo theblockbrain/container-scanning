@@ -1,4 +1,4 @@
-FROM postgres:15-bookworm
+FROM postgres:14-bookworm
 
 # Install pgvector extension using apt-get
 # RUN apt-get update \
