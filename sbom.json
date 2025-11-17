@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:88a8092d-871d-487c-98eb-8a68f58d9b3a",
+  "serialNumber": "urn:uuid:8ba96715-3e8f-4b39-baa9-b74eef55999c",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-11-17T13:52:31+00:00",
+    "timestamp": "2025-11-17T14:00:41+00:00",
     "tools": {
       "components": [
         {
@@ -20,10 +20,10 @@
       ]
     },
     "component": {
-      "bom-ref": "pkg:oci/sentimentanalysis@sha256%3A42e9912cb0fcd6abc6fc32ba5745d8e8ffbf81caac87815d3b4e94957e54b54d?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "bom-ref": "pkg:oci/sentimentanalysis@sha256%3Aadece3c8d3a16607d6c1ddf9a4097c59d4bb72cd8b48d967cfac1f4116786fa3?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "type": "container",
-      "name": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:42e9912cb0fcd6abc6fc32ba5745d8e8ffbf81caac87815d3b4e94957e54b54d",
-      "purl": "pkg:oci/sentimentanalysis@sha256%3A42e9912cb0fcd6abc6fc32ba5745d8e8ffbf81caac87815d3b4e94957e54b54d?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "name": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:adece3c8d3a16607d6c1ddf9a4097c59d4bb72cd8b48d967cfac1f4116786fa3",
+      "purl": "pkg:oci/sentimentanalysis@sha256%3Aadece3c8d3a16607d6c1ddf9a4097c59d4bb72cd8b48d967cfac1f4116786fa3?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -40,6 +40,10 @@
         {
           "name": "aquasecurity:trivy:DiffID",
           "value": "sha256:3911cda9174b43cf7ac6f1337ba1ace36141ede08275d080fb3668270de75ae5"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
         },
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -79,11 +83,11 @@
         },
         {
           "name": "aquasecurity:trivy:ImageID",
-          "value": "sha256:f5de80f3a686c48c61c4eb7f66c750899c1fc297aacbe6b1672419aa18ff9f90"
+          "value": "sha256:391d2428548892a1ac4f393e53aa06954ff1fa20b3baebc37dee5bc0451060c5"
         },
         {
           "name": "aquasecurity:trivy:RepoDigest",
-          "value": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:42e9912cb0fcd6abc6fc32ba5745d8e8ffbf81caac87815d3b4e94957e54b54d"
+          "value": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:adece3c8d3a16607d6c1ddf9a4097c59d4bb72cd8b48d967cfac1f4116786fa3"
         },
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -91,14 +95,14 @@
         },
         {
           "name": "aquasecurity:trivy:Size",
-          "value": "447528960"
+          "value": "539906560"
         }
       ]
     }
   },
   "components": [
     {
-      "bom-ref": "0439e975-fb5b-4a87-96c5-e569e7abc8f0",
+      "bom-ref": "b2d3e12d-2ae2-498d-ba71-12164e7291ce",
       "type": "operating-system",
       "name": "debian",
       "version": "12.12",
@@ -114,7 +118,7 @@
       ]
     },
     {
-      "bom-ref": "8a036f4b-1ec0-4887-94d4-0e1882c2f01f",
+      "bom-ref": "effa8dbb-4c49-49f3-8505-79257982f739",
       "type": "application",
       "name": "usr/local/bin/gosu",
       "properties": [
@@ -679,6 +683,541 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "dbus-bin",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dbus-bin@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dbus-daemon@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "dbus-daemon",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus-daemon@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dbus-daemon@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dbus-session-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "dbus-session-bus-common",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus-session-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dbus-session-bus-common@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dbus-system-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "dbus-system-bus-common",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus-system-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dbus-system-bus-common@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "dbus",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dbus@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -1059,6 +1598,73 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "2.2.40"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dmsetup@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "type": "library",
+      "supplier": {
+        "name": "Debian LVM Team <team+lvm@tracker.debian.org>"
+      },
+      "name": "dmsetup",
+      "version": "2:1.02.185-2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/dmsetup@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dmsetup@2:1.02.185-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lvm2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.03.16"
         }
       ]
     },
@@ -2814,6 +3420,73 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>"
+      },
+      "name": "libapparmor1",
+      "version": "3.0.8-3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libapparmor1@3.0.8-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apparmor"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.0.8"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -2868,6 +3541,58 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "2.6.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libargon2-1@0~20171227-0.3%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Luca Bruno <lucab@debian.org>"
+      },
+      "name": "libargon2-1",
+      "version": "0~20171227-0.3+deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libargon2-1@0~20171227-0.3%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libargon2-1@0~20171227-0.3+deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "argon2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "0.3+deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0~20171227"
         }
       ]
     },
@@ -3859,6 +4584,107 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libcryptsetup12@2.6.1-4~deb12u2?arch=amd64&distro=debian-12.12&epoch=2",
+      "type": "library",
+      "supplier": {
+        "name": "Debian Cryptsetup Team <pkg-cryptsetup-devel@alioth-lists.debian.net>"
+      },
+      "name": "libcryptsetup12",
+      "version": "2:2.6.1-4~deb12u2",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0-or-later WITH OpenSSL-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "LGPL-2.1-or-later WITH OpenSSL-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libcryptsetup12@2.6.1-4~deb12u2?arch=amd64&distro=debian-12.12&epoch=2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcryptsetup12@2:2.6.1-4~deb12u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcEpoch",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "cryptsetup"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "4~deb12u2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.6.1"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -3956,6 +4782,113 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "libdbus-1-3",
+      "version": "1.14.10-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "AFL-2.1"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl-BSDish"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-clause-generic"
+          }
+        },
+        {
+          "license": {
+            "name": "autoconf-archive-permissive"
+          }
+        },
+        {
+          "license": {
+            "name": "FSF-unlimited-permission"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH autoconf-exception+"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "g10-permissive"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdbus-1-3@1.14.10-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dbus"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.14.10"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -4009,6 +4942,73 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libdevmapper1.02.1@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "type": "library",
+      "supplier": {
+        "name": "Debian LVM Team <team+lvm@tracker.debian.org>"
+      },
+      "name": "libdevmapper1.02.1",
+      "version": "2:1.02.185-2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libdevmapper1.02.1@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdevmapper1.02.1@2:1.02.185-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lvm2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.03.16"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libedit2@3.1-20221030-2?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -4052,6 +5052,53 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "3.1-20221030"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Laszlo Boszormenyi (GCS) <gcs@debian.org>"
+      },
+      "name": "libexpat1",
+      "version": "2.5.0-1+deb12u2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libexpat1@2.5.0-1+deb12u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "expat"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1+deb12u2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.5.0"
         }
       ]
     },
@@ -4142,6 +5189,123 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "1.47.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfdisk1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "util-linux packagers <util-linux@packages.debian.org>"
+      },
+      "name": "libfdisk1",
+      "version": "2.38.1-5+deb12u3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "BSLA"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libfdisk1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libfdisk1@2.38.1-5+deb12u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "5+deb12u3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.38.1"
         }
       ]
     },
@@ -4977,6 +6141,115 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libip4tc2@1.8.9-2?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>"
+      },
+      "name": "libip4tc2",
+      "version": "1.8.9-2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libip4tc2@1.8.9-2?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libip4tc2@1.8.9-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "iptables"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.8.9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libjson-c5@0.16-2?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Nicolas Mora <babelouest@debian.org>"
+      },
+      "name": "libjson-c5",
+      "version": "0.16-2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libjson-c5@0.16-2?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libjson-c5@0.16-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "json-c"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.16"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libjson-perl@4.10000-1?arch=all&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -5139,6 +6412,68 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "1.6.3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libkmod2@30%2B20221128-1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Marco d'Itri <md@linux.it>"
+      },
+      "name": "libkmod2",
+      "version": "30+20221128-1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libkmod2@30%2B20221128-1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libkmod2@30+20221128-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "kmod"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "30+20221128"
         }
       ]
     },
@@ -7534,6 +8869,118 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/libsensors-config@3.6.0-7.1?arch=all&distro=debian-12.12&epoch=1",
+      "type": "library",
+      "supplier": {
+        "name": "Aurelien Jarno <aurel32@debian.org>"
+      },
+      "name": "libsensors-config",
+      "version": "1:3.6.0-7.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libsensors-config@3.6.0-7.1?arch=all&distro=debian-12.12&epoch=1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsensors-config@1:3.6.0-7.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcEpoch",
+          "value": "1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lm-sensors"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "7.1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.6.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsensors5@3.6.0-7.1?arch=amd64&distro=debian-12.12&epoch=1",
+      "type": "library",
+      "supplier": {
+        "name": "Aurelien Jarno <aurel32@debian.org>"
+      },
+      "name": "libsensors5",
+      "version": "1:3.6.0-7.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libsensors5@3.6.0-7.1?arch=amd64&distro=debian-12.12&epoch=1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsensors5@1:3.6.0-7.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcEpoch",
+          "value": "1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lm-sensors"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "7.1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.6.0"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -7963,6 +9410,88 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "12.2.0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsystemd-shared@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "libsystemd-shared",
+      "version": "252.39-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH Linux-syscall-note-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libsystemd-shared@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsystemd-shared@252.39-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "252.39"
         }
       ]
     },
@@ -10039,6 +11568,150 @@
       ]
     },
     {
+      "bom-ref": "pkg:deb/debian/postgresql-17-pgvector@0.8.1-2.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>"
+      },
+      "name": "postgresql-17-pgvector",
+      "version": "0.8.1-2.pgdg12+1",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/postgresql-17-pgvector@0.8.1-2.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "postgresql-17-pgvector@0.8.1-2.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pgvector"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "2.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.8.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/postgresql-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>"
+      },
+      "name": "postgresql-17",
+      "version": "17.7-3.pgdg12+1",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-regex"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-pg-dump"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-Unicode"
+          }
+        },
+        {
+          "license": {
+            "name": "double-metaphone"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "nagaysau-ishii"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/postgresql-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "postgresql-17@17.7-3.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "postgresql-17"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "3.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "17.7"
+        }
+      ]
+    },
+    {
       "bom-ref": "pkg:deb/debian/postgresql-18-jit@18.1-1.pgdg12%2B2?arch=amd64&distro=debian-12.12",
       "type": "library",
       "supplier": {
@@ -10229,6 +11902,103 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "18.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/postgresql-client-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian PostgreSQL Maintainers <team+postgresql@tracker.debian.org>"
+      },
+      "name": "postgresql-client-17",
+      "version": "17.7-3.pgdg12+1",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-regex"
+          }
+        },
+        {
+          "license": {
+            "name": "Tcl"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-pg-dump"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Custom-Unicode"
+          }
+        },
+        {
+          "license": {
+            "name": "double-metaphone"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-1.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "Artistic-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "nagaysau-ishii"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/postgresql-client-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "postgresql-client-17@17.7-3.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "postgresql-17"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "3.pgdg12+1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "17.7"
         }
       ]
     },
@@ -10692,6 +12462,222 @@
         {
           "name": "aquasecurity:trivy:SrcVersion",
           "value": "1.1.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysstat@12.6.1-1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Robert Luberda <robert@debian.org>"
+      },
+      "name": "sysstat",
+      "version": "12.6.1-1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/sysstat@12.6.1-1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sysstat@12.6.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sysstat"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "12.6.1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd-timesyncd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "systemd-timesyncd",
+      "version": "252.39-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH Linux-syscall-note-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd-timesyncd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "systemd-timesyncd@252.39-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "252.39"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>"
+      },
+      "name": "systemd",
+      "version": "252.39-1~deb12u1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0-only WITH Linux-syscall-note-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "name": "public-domain"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:3fac23c3a27cdc010b7cfd1ed6fa43a85fe457804f26d6723a30ab60fe3b0852"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:0372a8d7c4ed1b653b149cbcb4c79607c3bc0bddb56caacba77aa90055b2bcb3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "systemd@252.39-1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "1~deb12u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "252.39"
         }
       ]
     },
@@ -11534,7 +13520,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0439e975-fb5b-4a87-96c5-e569e7abc8f0",
+      "ref": "b2d3e12d-2ae2-498d-ba71-12164e7291ce",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.12",
@@ -11542,6 +13528,7 @@
         "pkg:deb/debian/bsdutils@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12&epoch=1",
         "pkg:deb/debian/coreutils@9.1-1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/dash@0.5.12-2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/diffutils@3.8-4?arch=amd64&distro=debian-12.12&epoch=1",
         "pkg:deb/debian/e2fsprogs@1.47.0-2%2Bb2?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/findutils@4.9.0-4?arch=amd64&distro=debian-12.12",
@@ -11550,29 +13537,28 @@
         "pkg:deb/debian/gzip@1.12-1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/hostname@3.23%2Bnmu1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/less@590-2.1~deb12u2?arch=amd64&distro=debian-12.12",
-        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libattr1@2.5.1-4?arch=amd64&distro=debian-12.12&epoch=1",
         "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?arch=amd64&distro=debian-12.12",
-        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libnss-wrapper@1.1.12-1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?arch=all&distro=debian-12.12",
         "pkg:deb/debian/libss2@1.47.0-2%2Bb2?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/login@4.13%2Bdfsg1-1%2Bdeb12u1?arch=amd64&distro=debian-12.12&epoch=1",
         "pkg:deb/debian/mawk@1.3.4.20200120-3.1?arch=amd64&distro=debian-12.12",
-        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/ncurses-base@6.4-4?arch=all&distro=debian-12.12",
         "pkg:deb/debian/ncurses-bin@6.4-4?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/perl@5.36.0-7%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/postgresql-17-pgvector@0.8.1-2.pgdg12%2B1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/postgresql-18-jit@18.1-1.pgdg12%2B2?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/sed@4.9-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/sysstat@12.6.1-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/systemd-timesyncd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
-        "pkg:deb/debian/xz-utils@5.4.1-1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/zstd@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12"
       ]
     },
     {
-      "ref": "8a036f4b-1ec0-4887-94d4-0e1882c2f01f",
+      "ref": "effa8dbb-4c49-49f3-8505-79257982f739",
       "dependsOn": [
         "pkg:golang/github.com/tianon/gosu@v1.19.0"
       ]
@@ -11633,6 +13619,50 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/dbus-daemon@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/dbus-session-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/dbus-session-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/dbus-system-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/dbus@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/dbus-bin@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/dbus-daemon@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/dbus-system-bus-common@1.14.10-1~deb12u1?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.12",
       "dependsOn": []
     },
@@ -11662,6 +13692,13 @@
         "pkg:deb/debian/libksba8@1.6.3-2?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libnpth0@1.6-3?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/dmsetup@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libdevmapper1.02.1@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2"
       ]
     },
     {
@@ -11832,6 +13869,12 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libapt-pkg6.0@2.6.1?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?arch=amd64&distro=debian-12.12",
@@ -11846,6 +13889,12 @@
         "pkg:deb/debian/libxxhash0@0.8.1-1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.12&epoch=1"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libargon2-1@0~20171227-0.3%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -11933,15 +13982,43 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/libcryptsetup12@2.6.1-4~deb12u2?arch=amd64&distro=debian-12.12&epoch=2",
+      "dependsOn": [
+        "pkg:deb/debian/libargon2-1@0~20171227-0.3%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libdevmapper1.02.1@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+        "pkg:deb/debian/libjson-c5@0.16-2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
       ]
     },
     {
+      "ref": "pkg:deb/debian/libdbus-1-3@1.14.10-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libdebconfclient0@0.270?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libdevmapper1.02.1@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+      "dependsOn": [
+        "pkg:deb/debian/dmsetup@1.02.185-2?arch=amd64&distro=debian-12.12&epoch=2",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libudev1@252.39-1~deb12u1?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -11953,9 +14030,23 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/libexpat1@2.5.0-1%2Bdeb12u2?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libfdisk1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -12050,6 +14141,18 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/libip4tc2@1.8.9-2?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libjson-c5@0.16-2?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libjson-perl@4.10000-1?arch=all&distro=debian-12.12",
       "dependsOn": []
     },
@@ -12064,6 +14167,15 @@
       "ref": "pkg:deb/debian/libkeyutils1@1.6.3-2?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libkmod2@30%2B20221128-1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/liblzma5@5.4.1-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -12284,6 +14396,17 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/libsensors-config@3.6.0-7.1?arch=all&distro=debian-12.12&epoch=1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/libsensors5@3.6.0-7.1?arch=amd64&distro=debian-12.12&epoch=1",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsensors-config@3.6.0-7.1?arch=all&distro=debian-12.12&epoch=1"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/libsepol2@3.4-2.1?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12"
@@ -12320,6 +14443,29 @@
         "pkg:deb/debian/gcc-12-base@12.2.0-14%2Bdeb12u1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/libsystemd-shared@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libapparmor1@3.0.8-3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libcap2@2.66-4%2Bdeb12u2?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/libcrypt1@4.4.33-2?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/libgcrypt20@1.10.1-3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libip4tc2@1.8.9-2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libkmod2@30%2B20221128-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/liblzma5@5.4.1-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -12494,6 +14640,42 @@
       ]
     },
     {
+      "ref": "pkg:deb/debian/postgresql-17-pgvector@0.8.1-2.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/postgresql-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/postgresql-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u4?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libicu72@72.1-3%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libllvm19@19.1.7-3~deb12u1?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libpq5@18.1-1.pgdg12%2B2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libselinux1@3.4-1%2Bb6?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libxml2@2.9.14%2Bdfsg-1.3~deb12u4?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libxslt1.1@1.1.35-1%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/locales@2.36-9%2Bdeb12u13?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/postgresql-client-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/postgresql-common@287.pgdg12%2B1?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/ssl-cert@1.1.2?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/tzdata@2025b-0%2Bdeb12u2?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.12&epoch=1"
+      ]
+    },
+    {
       "ref": "pkg:deb/debian/postgresql-18-jit@18.1-1.pgdg12%2B2?arch=amd64&distro=debian-12.12",
       "dependsOn": [
         "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
@@ -12528,6 +14710,20 @@
         "pkg:deb/debian/postgresql-common@287.pgdg12%2B1?arch=all&distro=debian-12.12",
         "pkg:deb/debian/ssl-cert@1.1.2?arch=all&distro=debian-12.12",
         "pkg:deb/debian/tzdata@2025b-0%2Bdeb12u2?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.12&epoch=1"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/postgresql-client-17@17.7-3.pgdg12%2B1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/liblz4-1@1.9.4-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libpq5@18.1-1.pgdg12%2B2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libreadline8@8.2-1.3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/postgresql-client-common@287.pgdg12%2B1?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/sensible-utils@0.0.17%2Bnmu1?arch=all&distro=debian-12.12",
         "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64&distro=debian-12.12&epoch=1"
       ]
     },
@@ -12583,6 +14779,40 @@
         "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.12",
         "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.12",
         "pkg:deb/debian/openssl@3.0.17-1~deb12u3?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/sysstat@12.6.1-1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/debconf@1.5.82?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsensors5@3.6.0-7.1?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/ucf@3.0043%2Bnmu1%2Bdeb12u1?arch=all&distro=debian-12.12",
+        "pkg:deb/debian/xz-utils@5.4.1-1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/systemd-timesyncd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd-shared@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/systemd@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+      "dependsOn": [
+        "pkg:deb/debian/libacl1@2.3.1-3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libaudit1@3.0.9-1?arch=amd64&distro=debian-12.12&epoch=1",
+        "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libcryptsetup12@2.6.1-4~deb12u2?arch=amd64&distro=debian-12.12&epoch=2",
+        "pkg:deb/debian/libfdisk1@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libkmod2@30%2B20221128-1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libp11-kit0@0.24.1-2?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd-shared@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?arch=amd64&distro=debian-12.12",
+        "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?arch=amd64&distro=debian-12.12"
       ]
     },
     {
@@ -12671,10 +14901,10 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:oci/sentimentanalysis@sha256%3A42e9912cb0fcd6abc6fc32ba5745d8e8ffbf81caac87815d3b4e94957e54b54d?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "ref": "pkg:oci/sentimentanalysis@sha256%3Aadece3c8d3a16607d6c1ddf9a4097c59d4bb72cd8b48d967cfac1f4116786fa3?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "dependsOn": [
-        "0439e975-fb5b-4a87-96c5-e569e7abc8f0",
-        "8a036f4b-1ec0-4887-94d4-0e1882c2f01f"
+        "b2d3e12d-2ae2-498d-ba71-12164e7291ce",
+        "effa8dbb-4c49-49f3-8505-79257982f739"
       ]
     }
   ],
