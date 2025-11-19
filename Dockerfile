@@ -1,4 +1,4 @@
-FROM postgres:18-bookworm
+FROM postgres:17-bookworm
 
 # Install pgvector extension using apt-get
 RUN apt-get update \
