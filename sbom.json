@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:48120037-c2b5-47dc-b492-8a2d9a1c5570",
+  "serialNumber": "urn:uuid:ee889701-5b63-469e-ac50-499ee677523b",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-11-19T14:09:08+00:00",
+    "timestamp": "2025-11-19T16:08:50+00:00",
     "tools": {
       "components": [
         {
@@ -20,10 +20,10 @@
       ]
     },
     "component": {
-      "bom-ref": "pkg:oci/sentimentanalysis@sha256%3A27f0196ab08f5d6bb676392a32e0fcaa18cc0c261634a3b5193751c3154a4cfa?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "bom-ref": "pkg:oci/sentimentanalysis@sha256%3Adf0bcaafac1ce6e020b09eb48436b1171facdeb1c9eed8f990ace0abcd566fbf?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "type": "container",
-      "name": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:27f0196ab08f5d6bb676392a32e0fcaa18cc0c261634a3b5193751c3154a4cfa",
-      "purl": "pkg:oci/sentimentanalysis@sha256%3A27f0196ab08f5d6bb676392a32e0fcaa18cc0c261634a3b5193751c3154a4cfa?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "name": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:df0bcaafac1ce6e020b09eb48436b1171facdeb1c9eed8f990ace0abcd566fbf",
+      "purl": "pkg:oci/sentimentanalysis@sha256%3Adf0bcaafac1ce6e020b09eb48436b1171facdeb1c9eed8f990ace0abcd566fbf?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "properties": [
         {
           "name": "aquasecurity:trivy:DiffID",
@@ -91,7 +91,7 @@
         },
         {
           "name": "aquasecurity:trivy:RepoDigest",
-          "value": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:27f0196ab08f5d6bb676392a32e0fcaa18cc0c261634a3b5193751c3154a4cfa"
+          "value": "853310098537.dkr.ecr.eu-central-1.amazonaws.com/sentimentanalysis@sha256:df0bcaafac1ce6e020b09eb48436b1171facdeb1c9eed8f990ace0abcd566fbf"
         },
         {
           "name": "aquasecurity:trivy:SchemaVersion",
@@ -106,7 +106,7 @@
   },
   "components": [
     {
-      "bom-ref": "736b7808-b9b3-4f4a-aa5b-1a90e393ea7f",
+      "bom-ref": "273cd380-dc31-4024-8505-447a488a19d1",
       "type": "application",
       "name": "usr/local/bin/gosu",
       "properties": [
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "bom-ref": "7b805855-5d70-48e7-b461-e9f0bba87987",
+      "bom-ref": "7dc5804f-ee4e-4716-9891-3cfdd9a3cb41",
       "type": "operating-system",
       "name": "debian",
       "version": "12.12",
@@ -11373,13 +11373,13 @@
   ],
   "dependencies": [
     {
-      "ref": "736b7808-b9b3-4f4a-aa5b-1a90e393ea7f",
+      "ref": "273cd380-dc31-4024-8505-447a488a19d1",
       "dependsOn": [
         "pkg:golang/github.com/tianon/gosu@v1.19.0"
       ]
     },
     {
-      "ref": "7b805855-5d70-48e7-b461-e9f0bba87987",
+      "ref": "7dc5804f-ee4e-4716-9891-3cfdd9a3cb41",
       "dependsOn": [
         "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.12",
         "pkg:deb/debian/base-passwd@3.6.1?arch=amd64&distro=debian-12.12",
@@ -12496,10 +12496,10 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:oci/sentimentanalysis@sha256%3A27f0196ab08f5d6bb676392a32e0fcaa18cc0c261634a3b5193751c3154a4cfa?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
+      "ref": "pkg:oci/sentimentanalysis@sha256%3Adf0bcaafac1ce6e020b09eb48436b1171facdeb1c9eed8f990ace0abcd566fbf?arch=amd64&repository_url=853310098537.dkr.ecr.eu-central-1.amazonaws.com%2Fsentimentanalysis",
       "dependsOn": [
-        "736b7808-b9b3-4f4a-aa5b-1a90e393ea7f",
-        "7b805855-5d70-48e7-b461-e9f0bba87987"
+        "273cd380-dc31-4024-8505-447a488a19d1",
+        "7dc5804f-ee4e-4716-9891-3cfdd9a3cb41"
       ]
     }
   ],
