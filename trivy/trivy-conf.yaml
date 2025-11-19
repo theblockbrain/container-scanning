@@ -2,7 +2,7 @@
 
 timeout: 10m
 format: cyclonedx
-output: 'sbom.json'
+output: sbom.json
 dependency-tree: true
 # list-all-pkgs: true
 exit-code: 0
