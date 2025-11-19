@@ -1,7 +1,7 @@
 # https://trivy.dev/docs/latest/references/configuration/config-file/
 
 timeout: 10m
-format: spdx-json
+format: cyclonedx
 output: sbom.json
 dependency-tree: true
 # list-all-pkgs: true
