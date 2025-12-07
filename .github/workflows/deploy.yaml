@@ -15,6 +15,6 @@ jobs:
       container-name: sentimentanalysis
       environment: tst
       branch: main
-      trivy_conf: ./trivy/trivy-conf.yaml
+      trivy_conf: .trivy/trivy-conf.yaml
     secrets:
       iam-role: arn:aws:iam::853310098537:role/github-ecr

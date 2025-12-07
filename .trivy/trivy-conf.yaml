@@ -6,7 +6,7 @@ output: sbom.json
 dependency-tree: true
 # list-all-pkgs: true
 exit-code: 0
-ignorefile: "trivy/.trivyignore"
+ignorefile: ".trivy/.trivyignore"
 severity:
   - HIGH
   - CRITICAL
