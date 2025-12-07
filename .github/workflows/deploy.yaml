@@ -1,20 +1,20 @@
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - trivy/**
-      - .github/**
-      - Dockerfile
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - trivy/**
+  #     - .github/**
+  #     - Dockerfile
   workflow_dispatch:
 
 jobs:
   image:
-    uses: theblockbrain/workflows/.github/workflows/gitflow.yml@feat/PDEV-1745
+    uses: theblockbrain/workflows/.github/workflows/gitflow.yml@v1.0.0
     with:
       container-name: sentimentanalysis
       environment: tst
       branch: main
-      trivy_conf: ./trivy/trivy-conf.yaml
+      trivy_conf: .trivy/trivy-conf.yaml
     secrets:
       iam-role: arn:aws:iam::853310098537:role/github-ecr
