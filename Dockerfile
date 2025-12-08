@@ -10,7 +10,7 @@ ARG IMAGE_DOCUMENTATION="No image documentation set"
 
 # https://pkgs.alpinelinux.org/package/edge/main/x86_64/ca-certificates
 # renovate: datasource=repology depName=alpine_3_21/ca-certificates versioning=loose
-ENV CA_CERTIFICATES_VERSION="20241121-r1"
+ENV CA_CERTIFICATES_VERSION="20250911-r0"
 
 # https://pkgs.alpinelinux.org/package/edge/main/x86_64/git
 # renovate: datasource=repology depName=alpine_3_21/git versioning=loose
