@@ -14,7 +14,7 @@ ENV CA_CERTIFICATES_VERSION="20241121-r1"
 
 # https://pkgs.alpinelinux.org/package/edge/main/x86_64/git
 # renovate: datasource=repology depName=alpine_3_21/git versioning=loose
-ENV GIT_VERSION="2.47.2-r0"
+ENV GIT_VERSION="2.47.3-r0"
 
 RUN apk add --no-cache \
  ca-certificates="${CA_CERTIFICATES_VERSION}" \
