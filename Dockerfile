@@ -22,7 +22,7 @@ RUN apk add --no-cache \
 
 # https://www.npmjs.com/package/semantic-release
 # renovate: datasource=npm depName=semantic-release
-ENV SEMANTIC_RELEASE_VERSION="24.2.4"
+ENV SEMANTIC_RELEASE_VERSION="24.2.9"
 
 # https://www.npmjs.com/package/conventional-changelog-conventionalcommits
 # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
@@ -34,7 +34,7 @@ ENV SEMANTIC_RELEASE_COMMIT_ANALYZER_VERSION="13.0.1"
 
 # https://www.npmjs.com/package/@semantic-release/release-notes-generator
 # renovate: datasource=npm depName=@semantic-release/release-notes-generator
-ENV SEMANTIC_RELEASE_RELEASE_NOTES_GENERATOR_VERSION="14.0.3"
+ENV SEMANTIC_RELEASE_RELEASE_NOTES_GENERATOR_VERSION="14.1.0"
 
 # https://www.npmjs.com/package/@semantic-release/changelog
 # renovate: datasource=npm depName=@semantic-release/changelog
