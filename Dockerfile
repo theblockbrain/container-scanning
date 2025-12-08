@@ -1,4 +1,4 @@
-FROM postgres:17-trixie
+FROM postgres:18-trixie
 
 # https://packages.debian.org/trixie/source/pgvector
 # renovate: datasource=repology depName=debian_13/postgresql-17-pgvector versioning=loose
