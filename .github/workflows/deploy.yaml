@@ -10,7 +10,7 @@ on:
 
 jobs:
   image:
-    uses: theblockbrain/workflows/.github/workflows/gitflow.yml@v1.0.0
+    uses: theblockbrain/workflows/.github/workflows/gitflow.yml@v1.1.0
     with:
       container-name: sentimentanalysis
       environment: tst
