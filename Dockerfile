@@ -26,7 +26,7 @@ ENV SEMANTIC_RELEASE_VERSION="24.2.4"
 
 # https://www.npmjs.com/package/conventional-changelog-conventionalcommits
 # renovate: datasource=npm depName=conventional-changelog-conventionalcommits
-ENV CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION="8.0.0"
+ENV CONVENTIONAL_CHANGELOG_CONVENTIONALCOMMITS_VERSION="9.1.0"
 
 # https://www.npmjs.com/package/@semantic-release/commit-analyzer
 # renovate: datasource=npm depName=@semantic-release/commit-analyzer
