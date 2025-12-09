@@ -1,5 +1,5 @@
 # https://github.com/nodejs/docker-node/blob/056ab875500526e5088b49131c258575bf7c35c0/23/alpine3.21/Dockerfile
-FROM node:23-alpine3.21
+FROM node:25-alpine3.21
 
 ARG IMAGE_CREATED="No image creation date set"
 ARG IMAGE_SOURCE="No image source set"
